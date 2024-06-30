@@ -37,3 +37,5 @@ Completed the authentication of user creating 2 routes:
 ## Step 7:
 
 Creating the auth middleware to check the authorization of user.
+
+

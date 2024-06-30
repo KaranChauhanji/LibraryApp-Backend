@@ -18,6 +18,8 @@ const auth = async (req, res, next) => {
 
     req.body.userId = decoded.userId;
     req.body.author = decoded.username;
+
+    next();
   } catch (error) {
     res.status(404).send({ message: error.message });
   }

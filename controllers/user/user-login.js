@@ -20,7 +20,7 @@ try {
         if(result){
 
             // Generating jwt token
-            const token = jwt.sign({username:user.username, email:user.email, userId:user._id}, process.env.JWT_SECRET)
+            const token = jwt.sign({author:user.username, email:user.email, userId:user._id}, process.env.JWT_SECRET)
             res.status(200).send({message:"Login successful",token:token});
         }
     })
