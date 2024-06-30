@@ -16,3 +16,7 @@ Now Creating folder structure according toh MVC pattern.
 
 ## Step 3: 
 Do heath check for the server on app.js file.
+
+
+## Step 4:
+Connected to Db through Atlas. 

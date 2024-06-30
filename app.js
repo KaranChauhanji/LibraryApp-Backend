@@ -1,4 +1,5 @@
 const express = require('express');
+const connection = require('./config/db')
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -17,7 +18,7 @@ app.get('/',(_,res)=>{
 // Listening to the port
 app.listen(PORT,async()=>{
     try {
-        await
+       await connection;
         console.log("Server is Running and DB is Connected.")
     } catch (error) {
         console.log(error.message);
