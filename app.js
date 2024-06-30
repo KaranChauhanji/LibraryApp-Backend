@@ -1,11 +1,14 @@
 const express = require('express');
 const connection = require('./config/db')
+const userRouter = require('./routes/user.routes');
 const dotenv = require('dotenv');
 dotenv.config();
 
 const PORT = process.env.PORT || 3000
 const app = express();
 
+app.use(express.json());
+app.use('/user',userRouter)
 
 // Health check route 
 app.get('/',(_,res)=>{

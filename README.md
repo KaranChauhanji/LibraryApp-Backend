@@ -23,3 +23,10 @@ Connected to Db through Atlas.
 
 ## Step 5: 
 Creating models for book, user and review.
+
+
+## Step 5: 
+Completed the authentication of user creating 2 routes:
+1. /register => For user registration.
+2. /login => For user login.
+
