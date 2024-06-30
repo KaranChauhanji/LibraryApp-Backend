@@ -1,25 +1,10 @@
 const BookModel = require("../../models/book.model");
 
 const bookGet = async (req, res) => {
-  const { title, rating, price } = rq.body;
-
-  let searchQuery = {};
-
-  if (title) {
-    searchQuery.title = { $regex: title, $option: "i" };
-  }
-
-  if (rating) {
-    searchQuery.rating = { $regex: rating, $option: "i" };
-  }
-
-  if (price) {
-    searchQuery.price = { $regex: price, $option: "i" };
-  }
-
+  const searchQuery = req.query;
   try {
     const book = await BookModel.find(searchQuery);
-    res.status.send({ message: book });
+    res.status(200).send({ message: book });
   } catch (error) {
     res
       .status(404)

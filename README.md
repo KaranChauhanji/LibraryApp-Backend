@@ -38,4 +38,6 @@ Completed the authentication of user creating 2 routes:
 
 Creating the auth middleware to check the authorization of user.
 
+## Step 8:
 
+Complete CRUD Operations for book route.
