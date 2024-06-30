@@ -20,3 +20,6 @@ Do heath check for the server on app.js file.
 
 ## Step 4:
 Connected to Db through Atlas. 
+
+## Step 5: 
+Creating models for book, user and review.
